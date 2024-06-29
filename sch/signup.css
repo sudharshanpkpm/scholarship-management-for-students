@@ -1,0 +1,71 @@
+.container {
+	max-width: 500px;
+	margin: auto;
+	background-image: url("home\ mar\ 8.jpg");
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	padding: 20px;
+	border: 1px solid #ddd;
+  }
+  
+  h1 {
+	text-align: center;
+	color: darkorange;
+	margin-bottom: 20px;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  label {
+	margin-top: 10px;
+	font-size: 18px;
+  }
+  
+  input {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin-top: 5px;
+  }
+  
+  button {
+	margin-top: 20px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #3e8e41;
+  }
+body{
+	background-image: url("signup.jpg");
+	background-repeat: no-repeat ;
+	background-size: cover;
+}
+#message {
+	display:none;
+	background:#3e8e41;
+	color: #000;
+	position: relative;
+	padding: 20px;
+	margin-top: 10px;
+  }
+  
+  #message p {
+	padding: 10px 35px;
+	font-size: 18px;
+  }
+
+  body{
+	background-color:darkorange;
+  }
