@@ -1,80 +1,152 @@
-*{
-	margin: 0px;
-	padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.bgimage{
-	background-image: url("home\ 1.png");
-	background-size: 100% 100%;
-	width: 100%;
-	height: 100vh;
 
+.bgimage {
+    background-image: url("home 1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
-.menu{
-	width: 1550px;
-	height: 100px;
-	background-color: rgba(0,0,0,0.4);
 
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-.leftmenu{
-	width: 30%;
-	line-height:100px;
-	float: left; 
+
+.leftmenu {
+    width: 30%;
+    line-height: 100px;
 }
-.leftmenu h4{
-	padding-left: 5px;
-	font-weight: bold;
-	color: black;
-	font-size: 22px;
-	font-family: 'Montserrat', sans-serif;
+
+.leftmenu h4 {
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+}
+
+.rightmenu {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .rightmenu ul li {
-	font-family: 'Montserrat',sans-serif;
-	display: inline-block;
-	list-style: none;
-	font-size: 20px;
-    padding-right: 33px;
-	color:white;
-	font-weight: bold;
-	line-height: 100px;
-margin-left: 30px;
-text-transform: uppercase;
-}
-#firstlist{
-	color: orange;
-
+    margin-left: 20px;
 }
 
-.rightmenu ul li a text:hover{
-	color: orange;
+.rightmenu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.rightmenu{
-	width:63%;
-	height: 100px;
-	float: right;
-}
-
-/* visited link */
-.rightmenu ul li a:visited {
+.rightmenu ul li a:hover {
     color: orange;
 }
 
-.text{
-	width: 100%;
-	margin-top: 210px;
-	text-transform: uppercase;
-	text-align: center;
-	color:yellow;
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: yellow;
 }
-.text h4{
-	font-size: 14px;
-	font-family: 'Open Sans',sans-serif;
 
+.text h4 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
 }
-.text h1{
-	font-size: 60px;
-	font-family: 'Montserrat',sans-serif;
-	font-weight: 700px; 
+
+.text h1 {
+    font-size: 36px; /* Set title (h1) font size in pixels */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font family */
+    font-weight: bold; /* Adjust font weight if needed */
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content th, .content td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content th {
+    background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 768px) {
+    .leftmenu, .rightmenu {
+        width: 50%;
+    }
+
+    .text {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content th, .content td {
+        padding: 8px;
+    }
 }
