@@ -65,11 +65,12 @@ body {
 }
 
 .login-btn {
-	padding: 5px 10px; /* Adjust padding for smaller size */
-	font-size: 14px; /* Adjust font size */
+	padding: 5px 10px;
+	font-size: 14px;
 }
 
 .login-text {
 	margin-top: 5px;
 	font-size: 14px;
+	color:yellow;
 }
